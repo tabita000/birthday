@@ -8,7 +8,7 @@
     body {
       text-align: center;
       background: linear-gradient(135deg, #f9a8d4, #fbcfe8);
-      color: #850e65;
+      color: #810641;
       font-family: 'Comic Sans MS', cursive;
     }
 
@@ -54,9 +54,9 @@
 
     /* Photo card styling */
     #photoCard {
-      width: 300px; /* 4/2 ratio of the page */
-      border: 5px solid #961154; /* Shocking pink border */
-      border-radius: 15px;
+      width: 300px; /* Set a fixed size for the photo */
+      border: 5px solid #901653; /* Shocking pink border */
+      border-radius: 50px;
       overflow: hidden;
       position: absolute;
       bottom: 5%; /* Positioned at the bottom half of the screen */
@@ -67,8 +67,23 @@
     }
 
     #photoCard img {
-      width: 100%;
+      width: 100%; /* Make sure the image fits within the card */
       height: auto;
+    }
+
+    /* Media Query for Mobile Screens */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2em; /* Adjust for smaller screens */
+      }
+
+      #message {
+        font-size: 1.2em; /* Make the font size smaller for better readability */
+      }
+
+      #photoCard {
+        width: 80%; /* Make the image card take more of the screen's width */
+      }
     }
   </style>
 </head>
