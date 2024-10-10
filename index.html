@@ -8,9 +8,9 @@
     body {
       text-align: center;
       background: linear-gradient(135deg, #f9a8d4, #fbcfe8);
-      color: #41021e;
+      color: #fff;
       font-family: 'Comic Sans MS', cursive;
-      padding-bottom: 50px; /* Add padding to avoid content going behind the image */
+      padding-bottom: 50px; /* Add padding to avoid content being hidden */
     }
 
     h1 {
@@ -55,19 +55,18 @@
 
     /* Photo card styling */
     #photoCard {
-      width: 250px; /* Make the image smaller */
+      width: 200px; /* Make the image smaller on all devices */
       border: 5px solid #ff69b4; /* Shocking pink border */
       border-radius: 15px;
       overflow: hidden;
-      margin: 20px auto; /* Allow the image to be centered below text */
+      margin: 30px auto; /* Space between text and image */
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       background-color: white;
-      position: relative;
       z-index: 1;
     }
 
     #photoCard img {
-      width: 100%; /* Make sure the image fits within the card */
+      width: 100%;
       height: auto;
     }
 
@@ -82,8 +81,8 @@
       }
 
       #photoCard {
-        width: 200px; /* Make the image even smaller on mobile screens */
-        margin-top: 20px; /* Ensure space between the text and the image */
+        width: 180px; /* Reduce image size more on smaller screens */
+        margin-top: 40px; /* Ensure space between the text and the image */
       }
     }
   </style>
@@ -98,7 +97,7 @@
 
   <!-- Photo Card Section -->
   <div id="photoCard">
-    <img src="IMG_70DDA439F6C2-1.jpeg" alt="Picture of Us">
+    <img src="your-photo-url-here.jpg" alt="Picture of Us">
   </div>
   
   <audio id="happyBirthdaySong" src="https://www.bensound.com/bensound-music/bensound-birthdaysong.mp3"></audio>
