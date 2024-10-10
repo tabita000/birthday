@@ -8,8 +8,9 @@
     body {
       text-align: center;
       background: linear-gradient(135deg, #f9a8d4, #fbcfe8);
-      color: #810641;
+      color: #41021e;
       font-family: 'Comic Sans MS', cursive;
+      padding-bottom: 50px; /* Add padding to avoid content going behind the image */
     }
 
     h1 {
@@ -54,16 +55,15 @@
 
     /* Photo card styling */
     #photoCard {
-      width: 300px; /* Set a fixed size for the photo */
-      border: 5px solid #901653; /* Shocking pink border */
-      border-radius: 50px;
+      width: 250px; /* Make the image smaller */
+      border: 5px solid #ff69b4; /* Shocking pink border */
+      border-radius: 15px;
       overflow: hidden;
-      position: absolute;
-      bottom: 5%; /* Positioned at the bottom half of the screen */
-      left: 50%;
-      transform: translateX(-50%);
+      margin: 20px auto; /* Allow the image to be centered below text */
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       background-color: white;
+      position: relative;
+      z-index: 1;
     }
 
     #photoCard img {
@@ -82,7 +82,8 @@
       }
 
       #photoCard {
-        width: 80%; /* Make the image card take more of the screen's width */
+        width: 200px; /* Make the image even smaller on mobile screens */
+        margin-top: 20px; /* Ensure space between the text and the image */
       }
     }
   </style>
@@ -97,7 +98,6 @@
 
   <!-- Photo Card Section -->
   <div id="photoCard">
-    <!-- Add the URL to your photo here -->
     <img src="IMG_70DDA439F6C2-1.jpeg" alt="Picture of Us">
   </div>
   
